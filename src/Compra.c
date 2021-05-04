@@ -174,7 +174,7 @@ int compra_pedirIdVenta(int* id){
 	int number;
 	if(
 			id!=NULL &&
-			utn_getNumeroEntero(&number, "\nIngrese ID Venta-> ", "\ERROR-> ingresando ID", 1, 100, 3) == 0
+			utn_getNumeroEntero(&number, "\nIngrese ID Venta-> ", "\nERROR-> ingresando ID", 1, 100, 3) == 0
 	){
 		*id = number;
 		result = OK;

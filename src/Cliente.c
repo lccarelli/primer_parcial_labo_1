@@ -159,7 +159,7 @@ int cliente_pedirIdCliente(int* id){
 	int number;
 	if(
 			id!=NULL &&
-			utn_getNumeroEntero(&number, "\nIngrese ID Cliente-> ", "\ERROR-> ingresando ID", 1, 100, 3) == 0
+			utn_getNumeroEntero(&number, "\nIngrese ID Cliente-> ", "\nERROR-> ingresando ID", 1, 100, 3) == 0
 	){
 		*id = number;
 		result = OK;
